@@ -6,11 +6,11 @@
 
 .mat1 {
    background-color: white;
-   height: 61%;
-   width: 33%;
-   right: -20%;
-   top: 21%;
-   border-radius: 28px;
+   height: 63%;
+   width: 30%;
+   right: -23%;
+   top: 19%;
+   border-radius: 34px;
    display: flex;
    padding: 0px;
 }
@@ -42,11 +42,12 @@
 .mat2 {
    background-color: white;
    height: 455px;
-   width: 342px;
+   width: 350px;
    position: relative;
-   margin-left: 45%;
-   top: -46%;
-   padding: 0px;
+   margin-left: 48%;
+   top: -48%;
+   
+}
 
 .login {
    margin-top: 15px;
@@ -63,10 +64,10 @@
 }
 .signup {
 
-   margin-top: -6px;
+   margin-top: -24px;
    margin-bottom: -13px;
    position: relative;
-   left: 140px;
+   left: 165px;
    font-family: Roboto, sans-serif;
    font-size: 20px;
    font-weight: 500;
@@ -85,7 +86,6 @@
 
 .form-fields {
    width: 88%;
-   height: 100%;
    margin-left: 32px;
    margin-top: 14px;
 }
@@ -94,7 +94,7 @@
 }
 .input-field{
    width: 95%;
-   padding: 0px 0;
+  
 }
 .signupbutton {
    width: 278px;
@@ -103,5 +103,4 @@
    border-color: #a52a2a;
    color: white;
    position: relative;
-}
 }

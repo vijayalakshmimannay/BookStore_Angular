@@ -16,7 +16,8 @@
             <button type="button" class="signup" routerLink="/register">SIGNUP</button>
         </div>
 
-        <form>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            
             <div class="form-fields">
                 <div class="fullname">
                     <div>
@@ -61,7 +62,7 @@
                     <div>
                         <mat-form-field appearance="outline">
 
-                            <input type="text" class="input-field" formControlName="mobileNumber" matInput placeholder="">
+                            <input type="number" class="input-field" formControlName="mobileNumber" matInput placeholder="">
                             <mat-error>Enter mobile number</mat-error>
                         </mat-form-field>
                     </div>
