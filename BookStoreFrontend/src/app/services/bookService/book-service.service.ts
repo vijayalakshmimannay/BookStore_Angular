@@ -39,4 +39,9 @@ export class BookServiceService {
     }
     return this.http.getService('Book/GetBookById?BookId=' + BookId, true, header);
   }
+
+
+
+  
+ 
 }

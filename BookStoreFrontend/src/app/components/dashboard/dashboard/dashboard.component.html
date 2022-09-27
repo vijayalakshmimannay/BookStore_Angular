@@ -9,7 +9,7 @@
             </div>
             <mat-card class="search" img src="../../../../assets/search_black_24dp.svg">
 
-                <input class="searchInput" type="text" name="search" placeholder="Search.." />
+                <input class="searchInput" type="text" name="search" placeholder="Search.." (keyup)="Search($event)" />
             </mat-card>
 
             <button class="Profile" mat-button [matMenuTriggerFor]="menu">Profile <mat-icon class="searchIcon">

@@ -23,6 +23,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { OrderComponent } from './components/order/order.component';
 
 import { QuickviewComponent } from './components/quickview/quickview.component';
+import { CartComponent } from './components/cart/cart.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { FilterPipe } from './pipe/filter.pipe';
+
 
 
 @NgModule({
@@ -37,7 +41,10 @@ import { QuickviewComponent } from './components/quickview/quickview.component';
     OrderComponent,
    
     QuickviewComponent,
-
+    CartComponent,
+    WishlistComponent,
+    FilterPipe
+   
    
   ],
   imports: [

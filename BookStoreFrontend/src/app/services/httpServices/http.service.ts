@@ -14,10 +14,10 @@ export class HttpService {
     return this.httpclient.post(this.baseUrl+url,reqdata,token && httpOptions)
   }
 
-  getService(url : string='', token : boolean=false, httpOptions : any={} ){
+
+  getService(url : string, token : boolean=true, httpOptions : any={} ){
     
-   
-  return this.httpclient.get(this.baseUrl+url,token && httpOptions)
+    return this.httpclient.get(this.baseUrl+url,token && httpOptions)
   }
 
 
@@ -25,7 +25,8 @@ export class HttpService {
 
   } 
 
-  deleteService(){
+  deleteService(url : string, token : boolean = true , httpOptions : any = {}){
+    return this.httpclient.delete(this.baseUrl+url,token && httpOptions);
 
   }
 

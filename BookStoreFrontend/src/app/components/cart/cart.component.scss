@@ -1,0 +1,203 @@
+.main {
+    height: 150%;
+    margin: 2% 109px;
+}
+
+.home {
+    color: gray;
+    cursor: pointer;
+}
+
+.main-content {
+    width: 69%;
+    height: 352px;
+    border: 2px solid #E4E4E4;
+    margin-top: 3%;
+    margin-left: 7%;
+}
+.details-content{
+    padding: 1px 39px;
+    width: 34%;
+}
+.title-header {
+    background-color: white;
+    padding: 16px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    padding: 6px;
+    border: 2px solid #d3d1d1;
+}
+
+.mat-card {
+
+    width: 270px;
+    height: 90px;
+}
+
+.image {
+    width: 93px;
+    height: 122px;
+    opacity: 1;
+    margin-left: 35px;
+    margin-top: -7px;
+}
+.image-box{
+    width: 6%;
+   }
+.bookName {
+    height: 24px;
+    width: 167px;
+}
+
+.authorName {
+    height: 16px;
+    width: 76px;
+}
+
+.bodyBox {
+    height: 180px;
+}
+
+.placeOrder {
+    width: 270px;
+    height: 90px;
+}
+
+.inputBox {
+    border: 1px solid #DBDBDB;
+    height: 24px;
+    width: 41px;
+
+}
+
+// .quantity {
+//     display: flex;
+//     margin-top: 6%;
+//     margin-left: 4%;
+// }
+
+// .circle {
+//     height: 24px;
+//     width: 24px;
+//     margin-right: 4%;
+//     cursor: pointer;
+// }
+
+.remove-btn {
+    margin-left: 3%;
+    margin-top: 0px;
+    cursor: pointer;
+    background: border-box;
+    border: none;
+    font-weight: bold;
+}
+
+// .inputBox {
+//     border: 1px solid gainsboro;
+//     height: 24px;
+//     width: 41px;
+//     margin-right: 4%;
+//     text-align: center;
+
+// }
+
+.placebutton {
+
+    width: 151px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.customerAddress {
+    width: 603px;
+}
+
+.button1 {
+    width: 150px;
+    height: 35px;
+}
+
+.mat-card {
+
+    width: 270px;
+    height: 90px;
+}
+
+
+.image {
+    width: 99px;
+    height: 138px;
+    opacity: 1;
+    margin-left: 36px;
+    margin-top: -2px;
+}
+
+
+.bookName {
+    height: 24px;
+    width: 167px;
+}
+
+.authorName {
+    height: 16px;
+    width: 76px;
+}
+
+.bodyBox {
+    // height: 180px;
+    min-height: 100px;
+}
+
+.placeOrder {
+
+    width: 270px;
+    height: 90px;
+}
+
+
+.placebutton {
+
+    width: 151px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.button1 {
+    background: rgb(33, 74, 207);
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: -6%;
+    float: right;
+    margin-right: 1%;
+}
+.address {
+    background: gainsboro;
+    margin-top: 37px;
+    flex-direction: row;
+    margin-left: 7%;
+    box-sizing: border-box;
+    display: flex;
+    width: 69%;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    border: 2px solid #0000;
+}
+.order {
+    background: gainsboro;
+    margin-top: 37px;
+    flex-direction: row;
+    margin-left: 7%;
+    box-sizing: border-box;
+    display: flex;
+    width: 69%;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    border: 2px solid #0000;
+}

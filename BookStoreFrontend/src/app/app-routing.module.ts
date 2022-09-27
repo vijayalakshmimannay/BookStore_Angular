@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CartComponent } from './components/cart/cart.component';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword/forgotpassword.component';
@@ -9,6 +10,7 @@ import { OrderComponent } from './components/order/order.component';
 import { QuickviewComponent } from './components/quickview/quickview.component';
 import { RegisterComponent } from './components/register/register/register.component';
 import { ResetpasswordComponent } from './components/resetpassword/resetpassword/resetpassword.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 
 const routes: Routes = [
@@ -21,8 +23,10 @@ const routes: Routes = [
   children:[
     {path:'', redirectTo:'dashboard', pathMatch:'full'},
     {path:'books',component:GetAllBooksComponent},
-    {path: 'order',component:OrderComponent},
-   {path: 'quickview',component:QuickviewComponent}
+   {path: 'quickview',component:QuickviewComponent},
+   {path: 'cart',component:CartComponent},
+   {path: 'wishlist',component:WishlistComponent},
+   {path: 'order',component:OrderComponent},
   ]
   }
 

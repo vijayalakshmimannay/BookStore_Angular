@@ -1,0 +1,77 @@
+<div class="main">
+    <div class="heading">
+        <span class="home" routerLink="/dashboard/books">Home /</span><span> My cart</span>
+    </div>
+
+    <div class="main-content">
+        <div class="title-header">
+            <span class="title">My Cart({{qty}}) </span>
+            <div>
+                <select class="location">   
+                    <option> Use Current Location</option>
+                </select>
+            </div>
+        </div>
+        <div class="bodyBox">
+
+            <div *ngFor="let Book of cartBooks; let i = index">
+
+                <div class=”image-box”>
+                    <img [src]="Book.bookImage" width="90px" height="110px" class="image">
+                </div>
+
+                <div class="details-content">
+
+                    <div>
+
+                        <div>
+                            <h2 class="title">{{Book.bookName}}</h2>
+                            <p id="para"> by {{Book.authorName}}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <b style="margin-left: 18px;">Rs. {{Book.discountPrice}}</b>
+                        <del id="del"> Rs. {{Book.actualPrice}}</del>
+                    </div>
+                    <!-- <div class="quantity">
+                        <img class="circle" src="../../../assets/remove_circle_outline_black_24dp.svg" >
+                        <div class="inputBox">{{Book.bookQuantity}}</div>
+                        <img class="circle" src="../../../assets/add_circle_outline_black_24dp.svg">
+                        <button class="remove-btn" >Remove</button>
+                    </div> -->
+
+                    <div style="display:flex; gap:10px;">
+                        <button class="buttons" (click)="reduce()">-</button>
+                        <label>{{bookQuantity}}</label>
+                        <button class="buttons" (click)="increase()">+</button>
+                        <button class="button-1" (click)="removeCart(Book.bookId)">
+                            Remove
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button mat-raised matTooltip="Place Order!" class="button1"  (click)="placeorder()">PLACEORDER</button>
+        </div>
+    </div>
+    <div class="address">
+        <mat-toolbar >
+            <div >
+                <span class="title">Address Details</span>
+            </div>
+        </mat-toolbar>
+    </div>
+
+    <div class="order" >
+        <mat-toolbar >
+            <div>
+                <span class="title">Order Summary</span>
+            </div>
+        </mat-toolbar>
+    </div>
+
+    
+</div>

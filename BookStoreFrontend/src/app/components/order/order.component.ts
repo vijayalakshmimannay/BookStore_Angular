@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
-
-  constructor() { }
+  orderlist:any;
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
+  }
+  dashboard(){
+    this.route.navigateByUrl('/dashboard/books')
   }
 
 }
